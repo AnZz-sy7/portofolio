@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenka Izumo</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+   <style>
+        .paragraph-box {
+    background: #362a39;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    color: #faf9f9;
+    font-size: 1.08rem;
+    line-height: 1.6;
+}
+         .paragraph-box1 {
+    background: #fc15d5;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    color: #faf9f9;
+    font-size: 1.08rem;
+    line-height: 1.6;
+}
+        body {
+            background: linear-gradient(to bottom, #040404, #494949);
+            font-family: Arial, sans-serif;
+            color: #faf7f7;
+            margin: 0;
+            padding: 20px;
+        }
+input, button {
+    margin: 8px 0;
+    padding: 8px;
+    width: 90%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+button {
+    background: #c714b8;
+    color: #fff;
+    border:  none;
+    cursor: pointer;
+}
+.big-btn {
+    width: 100px;
+    height: 50px;
+    font-size: 1.3rem;
+     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+button:hover {
+    background: #a01090;
+}
+ wave {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 60px; z-index: 0;
+        }
+
+        title-box h1 {
+            position: relative;
+            z-index: 1;
+            color: #c714b8;
+            margin: 0;
+            padding-top: 12px;
+        }
+        .circle-img {
+    border-radius: 50%;
+    border: 4px solid #c714b8;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+        </style>
+</head>
+<!-- ...existing code... -->
+ <div class="paragraph-box">
+    <div style="position: relative; margin-bottom: 16px;">
+        <!-- Wave SVG behind the title -->
+        <h1><strong>HELLO FRIEND!</strong></h1>
+        <svg class="wave" viewBox="0 0 400 60" fill="none"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 60px; z-index: 0;">
+            <path d="M0 30 Q100 60 200 30 T400 30 V60 H0 V30 Z" fill="#c714b8"/>
+        </svg></div>
+<div style="display: flex; gap: 12px;" class="paragraph-box1">
+<body>
+    <button class="big-btn" onclick="window.location.href='home.html'"><i data-feather="home"></i>Home</button> 
+    <button class="big-btn" onclick="window.location.href='contact.html'"><i data-feather="alert-circle"></i>contact</button> 
+    <button class="big-btn"><i data-feather="menu"></i>menu</button>
+        <script>
+      feather.replace();
+    </script>
+</body>
+</div>
+    <div>
+        <h1 class="title-box">Tenka Izumo</h1>
+    <img class="circle-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtOvbAA0sPb5Y5sdr8VsygG_xK1Wzaei2ARA&s" alt="Tenka Izumo" width="150" height="150">
+    <p>so this is my waifu. idk why i add this but bc its still a tester so i add it</p>
+    <div class="paragraph-box1">
+        <p>she is a character from mato seihei no slave. she has ability to teleport her or some object.
+            her hair is yellow and have gradation from yellow to white, her eyes is blue.
+        </p>
+    </div>
+    <button onclick="saveInput()">Save</button>
+    <p id="savedText"></p>
+    <!-- ...existing code... -->
+    <script>
+    function saveInput() {
+    var inputValue = document.getElementById('myInput').value;
+    document.getElementById('savedText').textContent = "You typed: " + inputValue;
+    }
+    </script>
+    <!-- ...existing code... -->
+    <p>if you want to know about my waifu you cant <a href="https://mato-seihei-no-slave.fandom.com/wiki/Tenka_Izumo">click this link to get mor information</a></p>
+    <button onclick="alert('maurida dan dewita adalah sahabat 4ever')">click me!</button>
+</div>
+</body>
+</html>
